@@ -8,7 +8,6 @@ function MakeYourOwnRoad() {
       sx={{
         display: "flex",
         flexDirection: "row",
-        borderRadius: 2,
         border: "1px solid black",
         textAlign: "center",
         justifyContent: "space-evenly",
