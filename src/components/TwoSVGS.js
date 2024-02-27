@@ -79,7 +79,6 @@ function MakeYourOwnRoad() {
         >
           <img src={UnderTree2}></img>
         </Typography>
-
         <Box
           sx={{
             position: "absolute",
@@ -90,6 +89,42 @@ function MakeYourOwnRoad() {
           }}
         >
           <img src={BOOKSVG} alt="Description of your image" />
+        </Box>
+
+        <Box
+          fontSize="18px"
+          padding={"30px"}
+          fontWeight={"bold"}
+          fontFamily={"sans-serif"}
+          bgcolor={"white"}
+          border="1px solid black"
+          borderRadius={"20px"}
+          sx={{
+            position: "absolute",
+            left: 1070,
+            top: 2230,
+            zIndex: 1230,
+          }}
+        >
+          ...start by selling a blog post!
+        </Box>
+
+        <Box
+          fontSize="18px"
+          padding={"30px"}
+          fontWeight={"bold"}
+          fontFamily={"sans-serif"}
+          bgcolor={"white"}
+          border="1px solid black"
+          borderRadius={"20px"}
+          sx={{
+            position: "absolute",
+            left: 120,
+            top: 2240,
+            zIndex: 1230,
+          }}
+        >
+          Instead of selling a book...
         </Box>
       </Grid>
     </Grid>

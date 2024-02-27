@@ -6,10 +6,12 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 
+//myip's
 import Typography from "@mui/material/Typography";
 import counterSectionMan from "../assets/MyImages/trendsvc.png";
 import BOOKSVG from "../assets/MyImages/GumroadallSVG/MyPNG new/vectorpaintBooks.png";
 
+//mycomponents
 const MyBtnStartSelling = styled("button")({
   color: "black",
   backgroundColor: "white",
