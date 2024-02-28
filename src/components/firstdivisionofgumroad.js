@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 
 // Myips
 
-// import Yellowpaintbrush from "../assets/MyImages/yellowpaintbrush.svg";
+import Yellowpaintbrush from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/3gcoins.svg";
 
 // mycomponents
 const ButtonContainer = styled("div")({
@@ -148,14 +148,14 @@ function firstdivisionofgumroad() {
           >
             <Typography
               sx={{
-                fontSize: 70,
+                fontSize: 90,
                 fontStyle: "Bold",
                 color: "#000",
-                m: 1,
-                p: 1,
+
                 fontStyle: "Bold",
                 textAlign: "start",
-                fontFamily: "Mabry pro",
+                fontFamily: "Mabry pro, sans-serif",
+                fontWeight: "bold",
               }}
             >
               Go from <br></br> zero to $1{" "}
@@ -279,6 +279,28 @@ function firstdivisionofgumroad() {
             </Typography>
           </Typography>
         </Grid>
+        <Box
+          sx={{
+            position: "absolute",
+            left: 1150,
+            top: 800,
+            zIndex: 1230,
+            transition: "transform 0.1s ease",
+          }}
+        >
+          <img src={Yellowpaintbrush} alt="Yellowpaintbrush " />
+        </Box>
+        <Box
+          sx={{
+            position: "absolute",
+            left: 1500,
+            top: 400,
+            zIndex: 1230,
+            transition: "transform 0.1s ease",
+          }}
+        >
+          <img src={Yellowpaintbrush} alt="Yellowpaintbrush " />
+        </Box>
       </Grid>
     </Grid>
   );
