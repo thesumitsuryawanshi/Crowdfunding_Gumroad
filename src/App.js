@@ -26,7 +26,7 @@ import StartSelling from "./components/StartSelling";
 import SellToAnyone from "./components/SellToAnyone";
 
 import Firstdivisionofgumroad from "./components/firstdivisionofgumroad";
-// import SellAnything from "./components/sellinganything";
+import SellAnything from "./components/sellinganything";
 import MakeYourOwnRoad from "./components/MakeYourOwnRoad";
 import TwoSVGS from "./components/TwoSVGS";
 import TwoText from "./components/TwoText";
@@ -47,7 +47,7 @@ function App() {
       <TwoText></TwoText>
       <TwoSVGS></TwoSVGS>
       <MakeYourOwnRoad />
-      {/* <SellAnything /> */}
+      <SellAnything />s
       <MaxulichneyGuySection />
       <SellToAnyone />
       <TrendSVCGuySection></TrendSVCGuySection>
