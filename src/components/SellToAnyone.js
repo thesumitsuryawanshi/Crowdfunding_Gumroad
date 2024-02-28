@@ -1,6 +1,7 @@
+//myips
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-
+import SellTOAnyoneSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/sellToAnyone.svg";
 
 function SellToAnyone() {
   return (
@@ -9,7 +10,6 @@ function SellToAnyone() {
       sx={{
         display: "flex",
         flexDirection: "row",
-        borderRadius: 2,
         border: "1px solid black",
         textAlign: "center",
         justifyContent: "space-evenly",
@@ -22,27 +22,34 @@ function SellToAnyone() {
           fontSize: 60,
           fontStyle: "Bold",
           bgcolor: "#000",
-          m: 0,
-          pt: 10,
+          p: 12,
           fontFamily: "serif",
           textAlign: "center",
           borderRight: "1px solid black",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "flex -center",
         }}
       >
+        <Grid alignItems="center">
+          <img
+            src={SellTOAnyoneSVG}
+            height={"700px"}
+            weight={"700px"}
+            alt="MaxulichneyGuySectionPic"
+          />
+        </Grid>
         <Typography
           sx={{
             fontSize: 60,
             fontStyle: "Bold",
-            m: 1,
             p: 1,
             fontFamily: "serif",
             textAlign: "center",
             bgcolor: "#000",
             color: "#000",
           }}
-        >
-
-        </Typography>
+        ></Typography>
       </Grid>
 
       <Grid
@@ -75,7 +82,7 @@ function SellToAnyone() {
               fontSize: 55,
               fontStyle: "bold",
               textAlign: "Start",
-              fontFamily: "serif",
+              fontFamily: "Mabry pro , ",
               color: "#000",
             }}
           >
@@ -88,7 +95,7 @@ function SellToAnyone() {
             sx={{
               textAlign: "start",
               fontSize: 30,
-              fontFamily: "serif ",
+              fontFamily: "Mabry pro ,  ",
               color: "#000",
               fontStyle: "Bold",
             }}
