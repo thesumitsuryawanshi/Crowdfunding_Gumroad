@@ -30,6 +30,7 @@ function DefaultFooter() {
   };
   return (
     <Grid
+      container
       sx={{
         display: "flex",
         flexDirection: "row",
@@ -38,25 +39,32 @@ function DefaultFooter() {
       }}
       spacing={2}
     >
-      <Grid xs={5}>
+      <Grid item xs={9}>
         <Grid>
           <Card
             variant="outlined"
             sx={{
               display: "flex",
               flexDirection: "column",
+
+              justifyContent: "flex-start",
+
               bgcolor: "#000",
             }}
           >
             <Typography
-              display="flex"
               color="white"
               bgcolor="#000"
               fontFamily="san-serif"
               p={6}
-              variant="h1"
+              fontSize={"44px"}
+              align="start"
+              display="flex"
+              flexDirection="row"
+              justifyContent="flex-start" // Align text to start position
             >
-              Subscribe to get tips and tactics to grow the way you want.
+              Subscribe to get tips and tactics to <br></br> grow the way you
+              want.
             </Typography>
             <Grid container px={3} mb={5} alignItems="center">
               <Grid item xs={10}>
@@ -88,16 +96,15 @@ function DefaultFooter() {
                 onClick={handleClick}
                 style={{
                   backgroundColor: "#fc72e0",
-                  borderRadius: "0 10px 10px 0",
+                  borderRadius: "0px 8px 8px 0px",
+                  border: "1px solid black",
                 }} // Set border  us for the button
                 size="lg"
-                m={6}
-                p={6}
               >
                 <Typography
                   style={{
-                    fontSize: 34,
-                    color: "white",
+                    fontSize: 44,
+                    color: "black",
                     fontStyle: "italic||bold",
                   }}
                 >
@@ -152,7 +159,7 @@ function DefaultFooter() {
         </Grid>
       </Grid>
 
-      <Grid alignItems="center" xs={7} px={4} bgcolor="#000">
+      <Grid item xs={3} alignItems="center" px={4} bgcolor="#000">
         <Card bgcolor="#000">
           <Grid
             border="1px solid white"
@@ -184,13 +191,12 @@ function DefaultFooter() {
               <Typography color="#fff">Board Meetings</Typography>
             </Box>
           </Grid>
-          <Typography alignItems="center" px={5} m={5}>
+          <Typography alignItems="center" px={5} m={6}>
             <Box
               display="flex"
               flexDirection="row"
               justifyContent="space-evenly"
               alignItems="center"
-              bgcolor="#000"
             >
               <Typography
                 component="img"
