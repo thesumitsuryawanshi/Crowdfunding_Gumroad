@@ -47,7 +47,7 @@ function App() {
       <TwoText></TwoText>
       <TwoSVGS></TwoSVGS>
       <MakeYourOwnRoad />
-      <SellAnything />s
+      <SellAnything />
       <MaxulichneyGuySection />
       <SellToAnyone />
       <TrendSVCGuySection></TrendSVCGuySection>

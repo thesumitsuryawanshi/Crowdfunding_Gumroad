@@ -2,6 +2,8 @@ import Grid from "@mui/material/Grid"; // Import Grid component
 import Typography from "@mui/material/Typography";
 import { useScrollTrigger } from "@mui/material";
 
+import ConfusedOnLaptop from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/sellanything.svg";
+
 function SellAnything() {
   const trigger = useScrollTrigger({
     target: window,
@@ -28,25 +30,14 @@ function SellAnything() {
           fontSize: 60,
           fontStyle: "Bold",
           bgcolor: "#23A195",
-          m: 0,
-          pt: 10,
-          fontFamily: "serif",
+
+          pt: 6,
+          fontFamily: "Mabry pro, sans-serif  ",
           textAlign: "center",
           borderRight: "1px solid black",
         }}
       >
-        <Typography
-          sx={{
-            fontSize: 60,
-            fontStyle: "Bold",
-            m: 1,
-            p: 1,
-            fontFamily: "serif",
-            textAlign: "center",
-            bgcolor: "#23A195",
-            color: "#23A195",
-          }}
-        ></Typography>
+        <img src={ConfusedOnLaptop}></img>
       </Grid>
 
       <Grid
@@ -58,7 +49,7 @@ function SellAnything() {
           bgcolor: "#fff",
           m: 0,
           p: 0,
-          fontFamily: "serif",
+          fontFamily: "Mabry pro, sans-serif ",
           textAlign: "center",
         }}
       >
@@ -69,7 +60,7 @@ function SellAnything() {
             m: 6,
             p: 6,
             textAlign: "Start",
-            fontFamily: "serif",
+            fontFamily: "Mabry pro, sans-serif ",
             bgcolor: "#fff",
             color: "#000",
           }}
@@ -79,7 +70,7 @@ function SellAnything() {
               fontSize: 70,
               fontStyle: "bold",
               textAlign: "Start",
-              fontFamily: "serif",
+              fontFamily: "Mabry pro, sans-serif ",
               color: "#000",
             }}
           >
@@ -92,7 +83,7 @@ function SellAnything() {
               fontStyle: "bold",
 
               textAlign: "Start",
-              fontFamily: "serif",
+              fontFamily: "Mabry pro, ",
               color: "#000",
             }}
           >
@@ -111,13 +102,13 @@ function SellAnything() {
             }}
           >
             {" "}
-            <br></br> → Sell your Top 10 lists
-            <br></br> → Sell your crypto tips
-            <br></br> → Sell your fractal pack
-            <br></br> → Sell your keto cookbook
-            <br></br> → Sell your C4D scenes
-            <br></br> → Sell your new emojis
-            <br></br> → Seriously, sell anything!
+            <br></br> ➛ Sell your Top 10 lists
+            <br></br> ➛ Sell your crypto tips
+            <br></br> ➛ Sell your fractal pack
+            <br></br> ➛ Sell your keto cookbook
+            <br></br> ➛ Sell your C4D scenes
+            <br></br> ➛ Sell your new emojis
+            <br></br> ➛ Seriously, sell anything!
           </Typography>
         </Typography>
       </Grid>
