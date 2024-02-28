@@ -50,7 +50,7 @@ function App() {
       <SellAnything />
       <MaxulichneyGuySection />
       <SellToAnyone />
-      <TrendSVCGuySection></TrendSVCGuySection>
+      <TrendSVCGuySection />
       <SellAnywhere />
       {/* <Seventeenblocks /> */}
       <SmileyGirl />

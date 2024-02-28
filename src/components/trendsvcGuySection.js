@@ -10,6 +10,7 @@ import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import counterSectionMan from "../assets/MyImages/trendsvc.png";
 import BOOKSVG from "../assets/MyImages/GumroadallSVG/MyPNG new/vectorpaintBooks.png";
+import FreeSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/free2.png";
 
 //mycomponents
 const MyBtnStartSelling = styled("button")({
@@ -35,56 +36,53 @@ const handleStartSellingClick = () => {
 function trendsvcGuySection() {
   return (
     <Box
-      py={6}
-      my={6}
+      p={15}
       sx={{
-        margin: 2,
-        borderRadius: 5,
         justifyContent: "space-between",
         border: "1px solid black",
         bgcolor: "#23A195",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center", // Align items vertically
+        justifyContent: "space-between",
       }}
+      spacing={2}
     >
-      <Container
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center", // Align items vertically
-          justifyContent: "space-between",
-        }}
-      >
+      <Grid xs={6}>
         <Grid
           container
           item
-          xs={11}
           p={5}
+          display="flex"
+          flexDirection="column"
+          alignItems="center" // Align items vertically
+          justifyContent="space-between"
           m={5}
-          alignItems="center"
           sx={{ mx: "auto" }}
         >
           <Typography
             variant="body1"
             color="black"
             sx={{
-              fontFamily: "Mabry pro , Sans-serif",
+              fontFamily: "Mabry pro , ",
               fontSize: 30,
               fontStyle: "Bold",
               alignItems: "center", // Align items vertically
 
-              color: "white",
+              color: "black",
             }}
-            fontFamily="Mabry pro , Sans-serif"
+            fontFamily="Mabry pro ,"
           >
-            “Originally, I took pre-orders for my Trend Reports on Gumroad. But
-            I received... exactly $0. So I changed tactics: I made half of my
-            report free, and the other half paid. Today, 99% of Trends.VC
-            revenue is recurring in the form of annual and quarterly
-            subscriptions.”
+            “Originally, I took pre-orders for my Trend <br></br> Reports on
+            Gumroad. But I received... <br></br> exactly $0. So I changed
+            tactics: I made half <br></br> of my report free, and the other half
+            paid.<br></br> Today, 99% of Trends.VC revenue is <br></br>recurring
+            in the form of annual and <br></br>quarterly subscriptions.”
           </Typography>
           <Typography
             m={4}
             sx={{
-              fontFamily: "Mabry pro , Sans-serif",
+              fontFamily: "Mabry pro ",
               fontSize: 25,
               fontStyle: "Bold",
               alignItems: "center", // Align items vertically
@@ -99,13 +97,25 @@ function trendsvcGuySection() {
         <Box
           sx={{
             position: "absolute",
-            left: 870,
-            top: 5500,
+            left: 1090,
+            top: 6500,
             zIndex: 1230,
             transition: "transform 0.1s ease",
           }}
         >
           <img src={BOOKSVG} alt="Description of your image" />
+        </Box>
+
+        <Box
+          sx={{
+            position: "absolute",
+            left: 1590,
+            top: 6100,
+            zIndex: 1230,
+            transition: "transform 0.1s ease",
+          }}
+        >
+          <img src={FreeSVG} alt="Description of your image" />
         </Box>
 
         <MyBtnStartSelling
@@ -116,8 +126,8 @@ function trendsvcGuySection() {
             pl: 3,
             p: 1,
             position: "absolute",
-            left: 1150,
-            top: 5700,
+            left: 1650,
+            top: 6650,
             z: 11,
 
             transition: "transform 0.1s ease",
@@ -138,31 +148,11 @@ function trendsvcGuySection() {
           </svg>
           trendsvc
         </MyBtnStartSelling>
-        <Grid
-          item
-          sx={{
-            position: "absolute",
-            left: 1150,
-            top: 10,
-            z: 1221,
-            transition: "transform 0.3s ease",
-          }}
-        ></Grid>
-        <Grid
-          item
-          sx={{
-            position: "absolute",
-            left: 680,
-            top: 455,
-            z: 11,
-            transition: "transform 0.1s ease",
-          }}
-        ></Grid>
+      </Grid>
 
-        <Grid p={3} m={4} alignItems="center" justify="center">
-          <img src={counterSectionMan} alt="MaxulichneyGuySectionPic" />
-        </Grid>
-      </Container>
+      <Grid p={4} m={4} xs={6} alignItems="center" justify="center">
+        <img src={counterSectionMan} alt="MaxulichneyGuySectionPic" />
+      </Grid>
     </Box>
   );
 }

@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 //myip's
 import Box from "@mui/material/Box";
-import BOOKSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/exciting.svg";
+import BOOKSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/exciting2.png";
 
 //myconponents
 
