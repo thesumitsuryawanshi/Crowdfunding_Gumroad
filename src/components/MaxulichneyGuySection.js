@@ -1,16 +1,11 @@
-// @mui material components
 import Grid from "@mui/material/Grid";
-
-// Material Kit 2 React components
-
 import Box from "@mui/material/Box";
 
-// Material Kit 2 React examples
+//my ip's
 import { useScrollTrigger } from "@mui/material";
-
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-
+import BOOKSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/yellowHandwritingPen.svg";
 import MaxulichneyGuySectionPic from "../assets/MyImages/MaxulichneyGuySection.png";
 
 const MyBtnStartSelling = styled("button")({
@@ -46,24 +41,24 @@ function MaxulichneyGuySection() {
   return (
     <Box
       p={6}
-      m={6}
       sx={{
-        margin: 1,
-        borderRadius: 5,
         justifyContent: "space-between",
-        border: "1px solid black",
         bgcolor: "#FE91E8",
         flexDirection: "row",
         display: "flex",
       }}
+      spacing={2}
     >
       <Grid
+        xs={6}
         container
         item
-        xs={11}
         p={3}
         m={3}
-        alignItems="center"
+        alignItems="flex-start"
+        textAlign="center"
+        display="flex"
+        flexDirection={"column"}
         sx={{ mx: "auto" }}
       >
         <Typography
@@ -85,21 +80,22 @@ function MaxulichneyGuySection() {
             fontFamily: "Mabry pro , Sans-serif",
             fontSize: 30,
             fontStyle: "Bold",
-            alignItems: "center", // Align items vertically
+            alignItems: "center",
+            textAlign: "center", // Align items vertically
             color: "black",
           }}
-          fontFamily="Mabry pro , Sans-serif"
         >
-          “I launched MaxPacks as an experimental side gig; but within 2 years
-          those Procreate brushes were earning more than my 6-figure salary in
-          CG. Leaving in favor of Gumroad enabled me to explore other aspects of
-          my art, develop new hobbies, and finally prioritize my personal life.”
+          “I launched MaxPacks as an experimental <br></br> side gig; but within
+          2 years those Procreate <br></br> brushes were earning more than my
+          6-figure <br></br> salary in CG. Leaving in favor of <br></br>Gumroad
+          enabled me to explore other <br></br> aspects of my art, develop new
+          hobbies, <br></br> and finally prioritize my personal life.” <br></br>
           Max Ulichney sells Procreate Brush Packs
         </Typography>
         <Typography
           m={6}
           sx={{
-            fontFamily: "Mabry pro , Sans-serif",
+            fontFamily: "Mabry pro , ",
             fontSize: 25,
             fontStyle: "Bold",
             alignItems: "center", // Align items vertically
@@ -118,8 +114,8 @@ function MaxulichneyGuySection() {
             pl: 3,
             p: 1,
             position: "absolute",
-            left: 1450,
-            top: 5080,
+            left: 1690,
+            top: 4900,
             transition: "transform 0.1s ease",
             transform: trigger ? "translateY(-40px)" : "translateY(10)",
           }}
@@ -140,8 +136,25 @@ function MaxulichneyGuySection() {
           maxulichney
         </MyBtnStartSelling>
       </Grid>
-      <Grid p={3} m={3} alignItems="center" justify="center">
-        <img src={MaxulichneyGuySectionPic} alt="MaxulichneyGuySectionPic" />
+      <Box
+        sx={{
+          position: "absolute",
+          left: 1260,
+          top: 4770,
+          zIndex: 1230,
+          transition: "transform 0.1s ease",
+        }}
+      >
+        <img src={BOOKSVG} alt="Description of your image" />
+      </Box>
+
+      <Grid alignItems="center" justify="center" xs={6} mr={5}>
+        <img
+          src={MaxulichneyGuySectionPic}
+          height={"600px"}
+          weight={"600px"}
+          alt="MaxulichneyGuySectionPic"
+        />
       </Grid>
     </Box>
   );
