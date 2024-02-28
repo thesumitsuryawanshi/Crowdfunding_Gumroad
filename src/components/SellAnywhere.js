@@ -1,6 +1,8 @@
 import Grid from "@mui/material/Grid"; // Import Grid component
 import Typography from "@mui/material/Typography";
 
+import SellAnywherepng from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/sellanywhere.png";
+
 function SellAnywhere() {
   return (
     <Grid
@@ -40,6 +42,14 @@ function SellAnywhere() {
             color: "#FEC901",
           }}
         >
+          <Grid alignItems="center">
+            <img
+              src={SellAnywherepng}
+              height={"700px"}
+              weight={"700px"}
+              alt="MaxulichneyGuySectionPic"
+            />
+          </Grid>
         </Typography>
       </Grid>
 

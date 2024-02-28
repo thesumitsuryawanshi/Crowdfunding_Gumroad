@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid"; // Import Grid component
 import Typography from "@mui/material/Typography";
 import { useScrollTrigger } from "@mui/material";
 
-import ConfusedOnLaptop from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/sellanything.svg";
+import selllanything from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/SellAnything2.png";
 
 function SellAnything() {
   const trigger = useScrollTrigger({
@@ -37,7 +37,7 @@ function SellAnything() {
           borderRight: "1px solid black",
         }}
       >
-        <img src={ConfusedOnLaptop}></img>
+        <img src={selllanything}></img>
       </Grid>
 
       <Grid
