@@ -13,7 +13,10 @@ function PeopleInPark() {
         height="100%"
         width="100%"
       >
-        <img src={PeopleInParkSVG}></img>
+        <img
+          src={PeopleInParkSVG}
+          style={{ objectFit: "cover", width: "100%", height: "100%" }}
+        />
       </Box>
     </Card>
   );

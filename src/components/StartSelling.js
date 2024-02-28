@@ -110,10 +110,11 @@ function StartSelling() {
             <GridItemWrapper>
               <Typography
                 variant="h1"
-                color="white"
+                fontSize={"74px"}
+                color="black"
                 sx={{ m: 10, fontFamily: "sansserif" }} // Specify the font family
               >
-                17. Share your work. <br /> Someone out there needs it.
+                Share your work. <br /> Someone out there needs it.
               </Typography>
 
               <ButtonContainer sx={{ m: 10 }}>
