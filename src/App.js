@@ -18,7 +18,6 @@ import Footer from "./components/footer";
 import TrendSVCGuySection from "./components/trendsvcGuySection";
 import MaxulichneyGuySection from "./components/MaxulichneyGuySection";
 import SellAnywhere from "./components/SellAnywhere";
-// import Seventeenblocks from "./components/Seventeenblocks";
 import SmileyGirl from "./components/SmileyGirl";
 
 import PeopleInPark from "./components/PeopleInPark";
@@ -32,6 +31,7 @@ import TwoSVGS from "./components/TwoSVGS";
 import TwoText from "./components/TwoText";
 import TopAnimationGuy from "./components/TopAnimationGuy";
 import AmountEarned from "./components/amountEarned";
+import Seventeenblocks from "./components/seventeenblocks";
 
 function App() {
   return (
@@ -52,7 +52,7 @@ function App() {
       <SellToAnyone />
       <TrendSVCGuySection />
       <SellAnywhere />
-      {/* <Seventeenblocks /> */}
+      <Seventeenblocks />
       <SmileyGirl />
       <AmountEarned />
       <PeopleInPark />

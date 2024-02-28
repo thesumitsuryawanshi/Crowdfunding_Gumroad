@@ -2,10 +2,13 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 
 import Typography from "@mui/material/Typography";
 
 import SmilingGirl from "../assets/MyImages/SmilingGirl.png";
+import smileygirlmoney2 from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/smileygirlmoney2.png";
+import howto2 from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/howto2.png";
 import { useScrollTrigger } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -53,36 +56,67 @@ export default function SmileyGirl() {
       p={6}
       spacing={2}
     >
-      <Grid item xs={6}>
-        <Item>
+      <Grid item xs={6} display="flex" flexDirection="row">
+        <Typography
+          variant="h2"
+          color="black"
+          textAlign="center"
+          sx={{ fontFamily: "serif", fontSize: 32 }}
+          p={7}
+          m={7}
+        >
+          “For years, I had a goal to develop ‘passive’ <br></br> income
+          streams, but struggled to make that <br></br> a reality. Last year, I
+          started selling <br></br> informational products on Gumroad <br></br>
+          and since then have made $10k+ per month <br></br> building products
+          that <br></br> I love.” <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
           <Typography
-            variant="h2"
+            variant="h1"
             color="black"
             textAlign="center"
-            sx={{ fontFamily: "serif", fontSize: 32 }}
-            p={4}
-            m={1}
+            sx={{ fontFamily: "serif", fontSize: 27 }}
           >
-            “For years, I had a goal to develop ‘passive’ income streams, but
-            struggled to make that a reality. Last year, I started selling
-            informational products on Gumroad and <br></br> since then have made{" "}
-            <br></br> $10k+ per month <br></br> building products that <br></br>{" "}
-            I love.” <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Typography
-              variant="h1"
-              color="black"
-              textAlign="center"
-              sx={{ fontFamily: "serif", fontSize: 27 }}
-            >
-              - Steph Smith sells content tutorials
-            </Typography>
+            - Steph Smith sells content tutorials
           </Typography>
-        </Item>
+        </Typography>
       </Grid>
 
+      <Grid
+        item
+        xs={6}
+        display="flex"
+        flexDirection="row"
+        justifyContent={"center"}
+      >
+        <Grid p={4} m={4} xs={6} alignItems="center" justify="center">
+          <img src={SmilingGirl} alt="SmileyGirl" />
+        </Grid>
+      </Grid>
+      <Box
+        sx={{
+          position: "absolute",
+          left: 1200,
+          top: 7900,
+          zIndex: 1230,
+          transition: "transform 0.1s ease",
+        }}
+      >
+        <img src={smileygirlmoney2} alt="smileygirlmoney2" />
+      </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          left: 1450,
+          top: 8300,
+          zIndex: 1230,
+          transition: "transform 0.1s ease",
+        }}
+      >
+        <img src={howto2} alt="howto2" />
+      </Box>
       <MyBtnStartSelling
         onClick={handleStartSellingClick} // Add onClick event
         sx={{
@@ -91,8 +125,8 @@ export default function SmileyGirl() {
           pl: 3,
           p: 1,
           position: "absolute",
-          left: 1050,
-          top: 6500,
+          left: 1150,
+          top: 8400,
           zIndex: 1230,
           transition: "transform 0.1s ease",
           transform: trigger ? "translateY(-10px)" : "translateY(0)",
