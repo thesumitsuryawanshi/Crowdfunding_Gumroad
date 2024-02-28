@@ -1,7 +1,7 @@
 //myips
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import SellTOAnyoneSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/sellToAnyone.svg";
+import SellTOAnyoneSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/sellToanyone2.png";
 
 function SellToAnyone() {
   return (
