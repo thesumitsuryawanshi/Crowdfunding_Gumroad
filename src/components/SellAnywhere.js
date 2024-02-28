@@ -56,6 +56,7 @@ function SellAnywhere() {
       <Grid
         item
         xs={6}
+        mt={6}
         sx={{
           fontSize: 60,
           fontStyle: "Bold",
@@ -64,13 +65,16 @@ function SellAnywhere() {
           p: 0,
           fontFamily: "serif",
           textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center", // Align content to the bottom
         }}
       >
         <Typography
           sx={{
             fontSize: 35,
             fontStyle: "bold",
-            m: 6,
+            mt: 6,
             p: 6,
             textAlign: "Start",
             fontFamily: "serif",
@@ -99,10 +103,10 @@ function SellAnywhere() {
               color: "#000",
             }}
           >
-            Sell anywhere Create and customize your storefront with our
-            all-in-one platform or choose to use your personal site instead.
-            With Zapier, you can seamlessly connect your Gumroad account to
-            thousands of apps in your current stack.
+            Create and customize your storefront with our all-in-one <br></br>{" "}
+            platform or choose to use your personal site<br></br> instead. With
+            Zapier, you can seamlessly connect your<br></br> Gumroad account to
+            thousands of apps in your <br></br>current stack.
           </Typography>
         </Typography>
       </Grid>
