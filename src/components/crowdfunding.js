@@ -12,6 +12,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import AddIcon from "@mui/icons-material/Add";
 import StartSelling from "./StartSelling";
 import DefaultFooter from "./footer";
+import { AppBar, Toolbar } from "@mui/material";
 import DefaultNavBar from "./NavBar";
 import maxpack3 from "../assets/MyImages/Crowdfunding Images/maxpack3.png";
 
@@ -102,7 +103,9 @@ function Crowdfunding() {
   };
   return (
     <>
-      <DefaultNavBar></DefaultNavBar>
+      <AppBar position="sticky" sx={{ backgroundColor: "#fff" }}>
+        <DefaultNavBar color="white" />
+      </AppBar>
       <Grid
         container
         bgcolor="#FEC901"
