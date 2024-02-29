@@ -2,102 +2,152 @@
 import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import { styled } from "@mui/system";
 
 // Material Kit 2 React components
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/joy/Button";
 
-// Material Kit 2 React examples
-import DefaultNavBar from "./NavBar";
-import DefaultFooter from "./footer";
+//myip's
+import * as React from "react";
 
 // Presentation page sections
+import NavBar from "./NavBar";
+import Footer from "./footer";
 import TrendSVCGuySection from "./trendsvcGuySection";
 import MaxulichneyGuySection from "./MaxulichneyGuySection";
 import SellAnywhere from "./SellAnywhere";
-import Seventeenblocks from "./Seventeenblocks";
 import SmileyGirl from "./SmileyGirl";
-
 import PeopleInPark from "./PeopleInPark";
 import StartSelling from "./StartSelling";
 import SellToAnyone from "./SellToAnyone";
-
 import Firstdivisionofgumroad from "./firstdivisionofgumroad";
 import SellAnything from "./sellinganything";
 import MakeYourOwnRoad from "./MakeYourOwnRoad";
 import TwoSVGS from "./TwoSVGS";
 import TwoText from "./TwoText";
 import TopAnimationGuy from "./TopAnimationGuy";
-import BuiltByDevelopers from "./BuiltByDevelopers";
+import AmountEarned from "./amountEarned";
+import Seventeenblocks from "./seventeenblocks";
 
 //myip's
-import * as React from "react";
+
+// mycomponents
+const ButtonContainer = styled("div")({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  height: "100%",
+  textAlign: "center",
+});
+const MyBtnStartSelling = styled("div")({
+  color: "white",
+  backgroundColor: "black",
+  borderRadius: 4,
+  transition: "all 0.3s ease 0s",
+  cursor: "pointer",
+  outline: "none",
+  border: "2px solid #000" /* Thin black border */,
+  alignItems: "center",
+  textAlign: "center",
+  justifyContent: "center",
+  "&:hover": {
+    transform: "translateY(-9px) translateX(-9px)",
+  },
+});
+const BoxRed = styled("div")({
+  color: "white",
+  backgroundColor: "#f21326",
+  borderRadius: 4,
+  transition: "all 0.3s ease 0s",
+  cursor: "pointer",
+  outline: "none",
+  border: "2px solid #000" /* Thin black border */,
+  alignItems: "center",
+  textAlign: "center",
+  justifyContent: "center",
+  "&:hover": {
+    transform: "translateY(-9px) translateX(-9px)",
+  },
+});
+
+const BoxYellow = styled("div")({
+  color: "white",
+  backgroundColor: "#e8fc03",
+  borderRadius: 4,
+  transition: "all 0.3s ease 0s",
+  cursor: "pointer",
+  outline: "none",
+  border: "2px solid #000" /* Thin black border */,
+  alignItems: "center",
+  textAlign: "center",
+  justifyContent: "center",
+  "&:hover": {
+    transform: "translateY(9px) translateX(9px)",
+  },
+});
 
 function Presentation() {
+  const handleStartSellingClick = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/crowdfunding");
+  };
   return (
-    <>
-      <Box>
-        <img
-          src="https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/618ea7afd990103829d614ff_gumroad-logo.svg"
-          width="100%"
-          height="100%"
-        ></img>
-        <DefaultNavBar />
-        <Firstdivisionofgumroad></Firstdivisionofgumroad>
-        <TopAnimationGuy />
-        <TwoText></TwoText>
-        <TwoSVGS></TwoSVGS>
-        <MakeYourOwnRoad />
-        <SellAnything />
-        <MaxulichneyGuySection />
-        <SellToAnyone />
-        <TrendSVCGuySection></TrendSVCGuySection>
-        <SellAnywhere />
-        <Seventeenblocks />
-        <SmileyGirl />
-        <BuiltByDevelopers />
-        <PeopleInPark />
-        <StartSelling />
-        <Box p={6} m={6} border="1px solid black" borderRadius="12px">
-          <Container>
-            <Grid container spacing={3}>
-              <Grid
-                item
-                xs={12}
-                lg={5}
-                ml="auto"
-                sx={{ textAlign: { xs: "center", lg: "left" } }}
-              >
-                <Typography variant="h1" fontWeight="bold" mb={0.5}>
-                  Crowfunding
-                </Typography>
-                <Typography variant="body1" color="text">
-                  A new way of gumroad where Creators or Customer can become
-                  investors{" "}
-                </Typography>
-              </Grid>
-              <Grid
-                item
-                xs={12}
-                lg={5}
-                my={{ xs: 5, lg: "auto" }}
-                mr={{ xs: 0, lg: "auto" }}
-                sx={{ textAlign: { xs: "center", lg: "right" } }}
-              >
-                <Button variant="contained" size="large">
-                  <Link to="/crowdfunding">What is Crowdfunding?</Link>
-                </Button>
-              </Grid>
-            </Grid>
-          </Container>
-        </Box>
-        {/* 19. footer */}
-        <Box pt={6} px={1} mt={6}>
-          <DefaultFooter />
-        </Box>
+    <div className="App">
+      <img
+        src="https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/618ea7afd990103829d614ff_gumroad-logo.svg"
+        width="100%"
+        height="100%"
+      ></img>
+      <NavBar sty />
+      <Firstdivisionofgumroad></Firstdivisionofgumroad>
+      <TopAnimationGuy />
+      <TwoText></TwoText>
+      <TwoSVGS></TwoSVGS>
+      <MakeYourOwnRoad />
+      <SellAnything />
+      <MaxulichneyGuySection />
+      <SellToAnyone />
+      <TrendSVCGuySection />
+      <SellAnywhere />
+      <Seventeenblocks />
+      <SmileyGirl />
+      <AmountEarned />
+      <PeopleInPark />
+      <StartSelling />
+      <Box p={3} m={3} border="1px solid black" borderRadius="12px">
+        <Container>
+          <Grid item xs={12}>
+            <Typography variant="h1" fontWeight="bold" mb={0.5}>
+              Crowfunding
+            </Typography>
+            <Typography variant="body1" color="text">
+              Enter a new realm with Gumroad, where <br></br> creators and
+              customers alike can step <br></br> into the role of investors,
+              transforming the crowdfunding landscape.
+            </Typography>
+          </Grid>
+
+          <ButtonContainer sx={{ m: 6 }}>
+            <BoxYellow>
+              <BoxRed>
+                <MyBtnStartSelling
+                  onClick={handleStartSellingClick} // Add onClick event
+                  sx={{ px: 9, py: 1.5 }}
+                  Link
+                >
+                  Crowdfunding
+                </MyBtnStartSelling>{" "}
+              </BoxRed>
+            </BoxYellow>
+          </ButtonContainer>
+        </Container>
       </Box>
-    </>
+      <Box pt={2} mt={2}>
+        <Footer />
+      </Box>
+    </div>
   );
 }
 
