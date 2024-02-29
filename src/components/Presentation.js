@@ -13,6 +13,7 @@ import Button from "@mui/joy/Button";
 import * as React from "react";
 
 // Presentation page sections
+
 import NavBar from "./NavBar";
 import Footer from "./footer";
 import TrendSVCGuySection from "./trendsvcGuySection";
