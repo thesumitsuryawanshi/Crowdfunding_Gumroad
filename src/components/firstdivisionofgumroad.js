@@ -269,7 +269,7 @@ function firstdivisionofgumroad() {
               sx={{
                 position: "absolute",
                 left: 970,
-                top: 950,
+                top: 951,
                 z: 30,
                 transition: "transform 0.1s ease",
               }}
