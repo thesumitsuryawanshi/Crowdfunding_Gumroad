@@ -2,24 +2,17 @@
 
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { Collapse, useScrollTrigger } from "@mui/material";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton"; // import { Typography, Button, Box } from "@mui/material";
 import { loadStripe } from "@stripe/stripe-js";
-
 import AddIcon from "@mui/icons-material/Add";
-
 import StartSelling from "./StartSelling";
-
 import DefaultFooter from "./footer";
-
 import DefaultNavBar from "./NavBar";
-
-import BlogCard from "./BlogCard";
-
 import maxpack3 from "../assets/MyImages/Crowdfunding Images/maxpack3.png";
 
 import mshair1 from "../assets/MyImages/Crowdfunding Images/hair1.png";
@@ -42,6 +35,13 @@ import Coin5 from "../assets/MyImages/GumroadallSVG/Crowdfunding SVG/svg-export/
 
 import RemoveIcon from "@mui/icons-material/Remove";
 import Divider from "@mui/material/Divider";
+
+//myip's
+
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
 
 function Crowdfunding() {
   const [open, setOpen] = React.useState(false);
@@ -212,7 +212,14 @@ function Crowdfunding() {
           <img src={Coin1}></img>
         </Grid>
       </Grid>
-      <Grid display="flex" flexDirection="row" justifyContent={"space-between"}>
+
+      {/* //#################################################################################################################### */}
+      <Grid
+        display="flex"
+        flexDirection="row"
+        bgcolor={"#e4e6eb"}
+        justifyContent={"space-between"}
+      >
         <Box
           display="flex"
           flexDirection="Column"
@@ -246,21 +253,34 @@ function Crowdfunding() {
                 container
                 item
                 xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                sx={{
+                  mx: "auto",
+                  px: { xs: 0, lg: 6 },
+                }}
               >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={vitrivianMan}
-                    title="Life Trining program - Project by AJAC "
-                    description="The AJAC Life Training log is a daily accountability journal that you can use, based upon building and enforcing the following daily habits."
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/-",
-                    }}
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={bitcoin2}
+                    title="green iguana"
                   />
-                </div>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Crypto Bitcoins Guide - The Beginner's Guide to
+                      Cryptocurrency
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Crypto Bitcoins Guide: Many individuals believe that
+                      bitcoins represent a new era of digital currency and often
+                      get confused with them.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
               </Grid>
             </Box>
 
@@ -283,7 +303,469 @@ function Crowdfunding() {
                 },
               }}
             >
-              {" "}
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={MonkeyNFT}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      How to NFT: Ebook by @TheMon3yMom
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      his course covers the basics of NFTs: How to create, buy
+                      and sell NFTs NFT culture communit Minting NFTs How to
+                      create a wallet.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={brainimg}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Become Unstoppable- A System to Unleash your Inner Beast
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      BYou will rewire your Mind and Finally build those killer
+                      Habits to optimize your Existence on Every Level --
+                      physically, emotionally, and financially.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      {" "}
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={monkeynft2}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Hoodie Monkey el Patron NFT
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Hoodie Monkey drinking wine. 8k/3d image for NFT ready!The
+                      patron like do drink & smoke on some woods during his
+                      breaks! Because
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+          </Box>
+
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent={"space-between"}
+          >
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={mshair1}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Vol 1 Clip Studio Paint, Brushes By. Vegalia.
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Vol 1 Clip Studio Paint, Photoshop & Fresco Curl, Coil,
+                      and Wave Brushes Brushes By. Vegalia. Things include
+                      Paint, Photoshop Deluxe items.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={mshair2}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      ol 2 Clip Studio Paint, Brushes By. Vegalia{" "}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Vol 2 Clip Studio Paint, Photoshop & Fresco Curl, Coil,
+                      and Wave Brushes Brushes By. Vegalia. Things include
+                      Paint, Photoshop Deluxe items.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={vitrivianMan}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Life Trining program - Project by AJAC
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      The AJAC Life Training log is a daily accountability
+                      journal that you can use, based upon building and
+                      enforcing the following daily habits.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={ancientHero1}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Ancient Athletics - Alexander J.A Cortes{" "}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Train Like the Ancients #1: Sunlight and its Role in
+                      Health  Heal Like the Ancients #2: METH and Light vs RICE 
+                      Ancients Training #4 Spiritual Hygiene 
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+          </Box>
+
+          <Box
+            display="flex"
+            flexDirection="row"
+            justifyContent={"space-between"}
+          >
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={bitcoin1}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      ChatGPT Crypto Trading Mastery
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Master crypto will help with using ChatGPT as a FREE
+                      trading assistant. The basics of Crypto trading
+                      strategies, how to create NFT's using AI.
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
+              <Grid
+                container
+                item
+                xs={12}
+                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+              >
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
+                    image={maxpack3}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      he Painter's MaxPack - Brushes for Procreate
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      The Painter's MaxPack is a set of brushes compatible with
+                      Procreate 4+   Enjoy 12 natural media brushes and 5 bonus
+                      smudge brushes."
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            </Box>
+
+            <Box
+              pt={6}
+              pb={3}
+              px={3}
+              sx={{
+                transition: "transform 0.4s",
+                "& > div, & > div > div": {
+                  transition: "inherit",
+                },
+                "&:hover": {
+                  "& > div": {
+                    transform: "rotateY(30deg)",
+                    "& > div:nth-child(2)": {
+                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
+                    },
+                  },
+                },
+              }}
+            >
               <Grid>
                 <Grid
                   container
@@ -291,19 +773,29 @@ function Crowdfunding() {
                   xs={12}
                   sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
                 >
-                  <div onClick={OpenStripe}>
-                    <BlogCard
-                      image={mshair1}
-                      title="Vol 1 Clip Studio Paint, Brushes By. Vegalia. "
-                      description="Vol 1 Clip Studio Paint, Photoshop & Fresco Curl, Coil, and Wave Brushes Brushes By. Vegalia. Things include  Paint, Photoshop Deluxe items."
-                      action={{
-                        type: "internal",
-                        route: "/sections/page-sections/general-cards",
-                        color: "info",
-                        label: "Starting Investment : $100/-",
-                      }}
+                  <Card>
+                    <CardMedia
+                      sx={{ height: 300 }}
+                      image={eagleimg}
+                      title="green iguana"
                     />
-                  </div>
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Eagle Eye Thinkers{" "}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        "Third Eye Is a comedic slice-of-life series about
+                        friendship, growth, and observing the genuine and unique
+                        parts of our favorite things.also demons.
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button size="small" onClick={OpenStripe}>
+                        {" "}
+                        Starting Investment : $100/-
+                      </Button>
+                    </CardActions>
+                  </Card>
                 </Grid>
               </Grid>
             </Box>
@@ -333,423 +825,37 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={mshair2}
-                    title="Vol 2   Clip Studio Paint, Brushes By. Vegalia."
-                    description="Vol 2 Clip Studio Paint, Photoshop & Fresco Curl, Coil, and Wave Brushes Brushes By. Vegalia. Things include  Paint, Photoshop Deluxe items."
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/-",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={ancientHero1}
-                    title="Ancient Athletics - Alexander J.A Cortes"
-                    description="Train Like the Ancients #1: Sunlight and its Role in Health 
-Heal Like the Ancients #2: METH and Light vs RICE 
- Ancients Training #4 Spiritual Hygiene "
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-          </Box>
-
-          <Box
-            display="flex"
-            flexDirection="row"
-            justifyContent={"space-between"}
-          >
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={monkeynft2}
-                    title="Hoodie Monkey el Patron NFT"
-                    description="Hoodie Monkey drinking wine. 8k/3d image for NFT ready!The patron 
-                  like do drink & smoke on some woods during his breaks! Because "
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={bitcoin1}
-                    title="ChatGPT Crypto Trading Mastery"
-                    description="Master crypto will help with using ChatGPT as a FREE trading assistant. The basics of  Crypto trading strategies, how to create NFT's using AI."
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={MonkeyNFT}
-                    title="How to NFT: Ebook by @TheMon3yMom"
-                    description="his course covers the basics of NFTs:
-How to create, buy and sell NFTs
-NFT culture communit Minting NFTs
-How to create a wallet
-"
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={maxpack3}
-                    title="The Painter's MaxPack - Brushes for Procreate"
-                    description="The Painter's MaxPack is a set of brushes compatible with Procreate 4+  
-Enjoy 12 natural media brushes and 5 bonus smudge brushes."
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-          </Box>
-
-          <Box
-            display="flex"
-            flexDirection="row"
-            justifyContent={"space-between"}
-          >
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
+                <Card>
+                  <CardMedia
+                    sx={{ height: 300 }}
                     image={pixelcoin1}
-                    title="NFTs for Artists | The ultimate guide to sell your ART as an NFT"
-                    description=" This course covers the basics of NFTs:
-
-How to create, buy and sell NFTs
-
-NFT culture and community
-
-NFT History
-
-How to mint NFTs"
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
+                    title="green iguana"
                   />
-                </div>
-              </Grid>
-            </Box>
-
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={eagleimg}
-                    title="Eagle Eye Thinkers"
-                    description="Third Eye Is a comedic slice-of-life series about friendship, growth, and observing the genuine and unique parts of our favorite 
-                  things.also demons. "
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={brainimg}
-                    title="Become Unstoppable- A System to Unleash your Inner Beast"
-                    description="BYou will rewire your Mind and Finally build those killer Habits to optimize your Existence on Every Level -- physically,   emotionally, and financially."
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment : $100/- ",
-                    }}
-                  />
-                </div>
-              </Grid>
-            </Box>
-
-            <Box
-              pt={6}
-              pb={3}
-              px={3}
-              sx={{
-                transition: "transform 0.4s",
-                "& > div, & > div > div": {
-                  transition: "inherit",
-                },
-                "&:hover": {
-                  "& > div": {
-                    transform: "rotateY(30deg)",
-                    "& > div:nth-child(2)": {
-                      transform: "scaleY(0.9) translate3d(20px, 30px, 40px)",
-                    },
-                  },
-                },
-              }}
-            >
-              <Grid
-                container
-                item
-                xs={12}
-                sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
-              >
-                <div onClick={OpenStripe}>
-                  <BlogCard
-                    image={bitcoin2}
-                    title="Crypto Bitcoins Guide - The Beginner's Guide to Cryptocurrency"
-                    description="Crypto Bitcoins Guide: Many individuals believe that bitcoins represent a new era of digital currency and often get confused with them."
-                    action={{
-                      type: "internal",
-                      route: "/sections/page-sections/general-cards",
-                      color: "info",
-                      label: "Starting Investment: $100/- ",
-                    }}
-                  />
-                </div>
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      NFTs for Artists | The ultimate guide to sell your ART as
+                      an NFT{" "}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      This course covers the basics of NFTs: How to create, buy
+                      and sell NFTs NFT culture and community NFT History How to
+                      mint NFTs"
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" onClick={OpenStripe}>
+                      Starting Investment : $100/-
+                    </Button>
+                  </CardActions>
+                </Card>
               </Grid>
             </Box>
           </Box>
         </Box>
       </Grid>
-      {/* 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */}
+
+      {/* //#################################################################################################################### */}
+
       <Box
         justifyContent="Start"
         fontFamily="sans-serif"
@@ -759,20 +865,26 @@ How to mint NFTs"
           variant="h1"
           textAlign="center"
           color="#000"
-          fontFamily="Sansserif"
+          fontFamily="Mabry pro,"
           fontStyle="Bold"
           justifyContent="Start"
           sx={{ fontSize: 75 }}
           m={5}
         >
           Frequently asked questions
-          <Typography fontFamily="Mabry pro " color="#000" mb={5}>
+          <Typography
+            fontFamily="Mabry pro, "
+            color="#000"
+            fontSize={23}
+            mb={5}
+          >
             <br></br> have another question?
             <a
               href="https://help.gumroad.com/"
               target="blank"
               rel="noopener"
               color="#000"
+              fontFamily="Mabry pro, "
             >
               &nbsp; Visit our help center.
             </a>
@@ -879,7 +991,6 @@ How to mint NFTs"
           ))}
         </List>
       </Box>
-      {/* 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */}
       <StartSelling />
       {/* <Link to="/"> Home ←</Link> */}
       <DefaultFooter />
