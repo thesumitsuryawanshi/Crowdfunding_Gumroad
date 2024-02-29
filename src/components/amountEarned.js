@@ -70,7 +70,7 @@ function BuiltByDevelopers() {
         sx={{
           position: "absolute",
           left: 1650,
-          top: 8700,
+          top: 10700,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -81,7 +81,7 @@ function BuiltByDevelopers() {
         sx={{
           position: "absolute",
           left: 1150,
-          top: 8990,
+          top: 10690,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -92,7 +92,7 @@ function BuiltByDevelopers() {
         sx={{
           position: "absolute",
           left: 1250,
-          top: 8490,
+          top: 11290,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -103,7 +103,7 @@ function BuiltByDevelopers() {
         sx={{
           position: "absolute",
           left: 10,
-          top: 8640,
+          top: 10740,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -114,7 +114,7 @@ function BuiltByDevelopers() {
         sx={{
           position: "absolute",
           left: 350,
-          top: 8500,
+          top: 10990,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -125,7 +125,7 @@ function BuiltByDevelopers() {
         sx={{
           position: "absolute",
           left: 1450,
-          top: 8900,
+          top: 11100,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -136,7 +136,7 @@ function BuiltByDevelopers() {
         sx={{
           position: "absolute",
           left: 250,
-          top: 8900,
+          top: 11200,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}

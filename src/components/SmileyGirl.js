@@ -99,7 +99,7 @@ export default function SmileyGirl() {
         sx={{
           position: "absolute",
           left: 1200,
-          top: 7900,
+          top: 10200,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -109,8 +109,8 @@ export default function SmileyGirl() {
       <Box
         sx={{
           position: "absolute",
-          left: 1450,
-          top: 8300,
+          left: 1480,
+          top: 10500,
           zIndex: 1230,
           transition: "transform 0.1s ease",
         }}
@@ -126,7 +126,7 @@ export default function SmileyGirl() {
           p: 1,
           position: "absolute",
           left: 1150,
-          top: 8400,
+          top: 10600,
           zIndex: 1230,
           transition: "transform 0.1s ease",
           transform: trigger ? "translateY(-10px)" : "translateY(0)",
