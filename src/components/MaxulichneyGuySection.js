@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import { useScrollTrigger } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
-import BOOKSVG from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/yellowHandwritingPen.svg";
+import YellowPen from "../assets/MyImages/GumroadallSVG/Presentation screen SVG/yellowhandwritingpen.png";
 import MaxulichneyGuySectionPic from "../assets/MyImages/MaxulichneyGuySection.png";
 
 const MyBtnStartSelling = styled("button")({
@@ -145,7 +145,7 @@ function MaxulichneyGuySection() {
           transition: "transform 0.1s ease",
         }}
       >
-        <img src={BOOKSVG} alt="Description of your image" />
+        <img src={YellowPen} alt="Description of your image" />
       </Box>
 
       <Grid alignItems="center" justify="center" xs={6} mr={5}>

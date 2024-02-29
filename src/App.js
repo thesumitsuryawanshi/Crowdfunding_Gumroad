@@ -100,7 +100,7 @@ function App() {
         width="100%"
         height="100%"
       ></img>
-      <NavBar />
+      <NavBar sty />
       <Firstdivisionofgumroad></Firstdivisionofgumroad>
       <TopAnimationGuy />
       <TwoText></TwoText>
