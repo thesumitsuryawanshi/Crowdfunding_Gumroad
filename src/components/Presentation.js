@@ -1,18 +1,18 @@
 // @mui material components
-import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/system";
+import { AppBar, Toolbar } from "@mui/material";
 
 // Material Kit 2 React components
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/joy/Button";
 
 //myip's
 import * as React from "react";
 
 // Presentation page sections
+
 import NavBar from "./NavBar";
 import Footer from "./footer";
 import TrendSVCGuySection from "./trendsvcGuySection";
@@ -94,13 +94,16 @@ function Presentation() {
     window.open("http://localhost:3000/crowdfunding");
   };
   return (
-    <div className="App">
+    <>
       <img
         src="https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/618ea7afd990103829d614ff_gumroad-logo.svg"
         width="100%"
         height="100%"
       ></img>
-      <NavBar sty />
+
+      <AppBar position="sticky" sx={{ backgroundColor: "#fff" }}>
+        <NavBar color="white" />
+      </AppBar>
       <Firstdivisionofgumroad></Firstdivisionofgumroad>
       <TopAnimationGuy />
       <TwoText></TwoText>
@@ -147,7 +150,7 @@ function Presentation() {
       <Box pt={2} mt={2}>
         <Footer />
       </Box>
-    </div>
+    </>
   );
 }
 

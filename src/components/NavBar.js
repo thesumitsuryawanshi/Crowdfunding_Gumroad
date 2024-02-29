@@ -1,6 +1,6 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import { Typography, Button, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 function DefaultNavBar() {
   const linkProps = {
