@@ -180,7 +180,7 @@ function firstdivisionofgumroad() {
                   <BoxRed>
                     <MyBtnStartSelling
                       onClick={handleStartSellingClick} // Add onClick event
-                      sx={{ px: 9, py: 1.5 }}
+                      sx={{ px: 9, py: 1.5, fontSize: 24 }}
                     >
                       Start Selling
                     </MyBtnStartSelling>{" "}
