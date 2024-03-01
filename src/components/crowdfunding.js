@@ -1077,6 +1077,7 @@ function Crowdfunding() {
               answer:
                 "Yes, \n Gumroad's crowdfunding program allows you to raise funds for your creative projects.",
             },
+
             {
               question:
                 "What are the benefits of using Gumroad's crowdfunding program?",
