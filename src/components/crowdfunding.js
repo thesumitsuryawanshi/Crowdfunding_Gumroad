@@ -279,7 +279,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -329,7 +343,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -379,7 +407,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       {" "}
                       Starting Investment : $100/-
                     </Button>
@@ -430,7 +472,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -486,7 +542,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -536,7 +606,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -586,7 +670,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -636,7 +734,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      size="small"
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -692,7 +804,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      size="small"
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -742,7 +868,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      size="small"
+                      onClick={OpenStripe}
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -793,7 +933,21 @@ function Crowdfunding() {
                       </Typography>
                     </CardContent>
                     <CardActions>
-                      <Button size="small" onClick={OpenStripe}>
+                      <Button
+                        size="small"
+                        onClick={OpenStripe}
+                        display={"flex"}
+                        flexDirection={"row"}
+                        justifyContent={"start"}
+                        style={{
+                          margin: 2,
+                          color: "#000",
+                          fontSize: 13, // Set the font size here
+                          backgroundColor: "#fff",
+                          border: "1px solid black",
+                          borderRadius: "4px",
+                        }}
+                      >
                         {" "}
                         Starting Investment : $100/-
                       </Button>
@@ -846,7 +1000,21 @@ function Crowdfunding() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={OpenStripe}>
+                    <Button
+                      size="small"
+                      display={"flex"}
+                      flexDirection={"row"}
+                      justifyContent={"start"}
+                      style={{
+                        margin: 2,
+                        color: "#000",
+                        fontSize: 13, // Set the font size here
+                        backgroundColor: "#fff",
+                        border: "1px solid black",
+                        borderRadius: "4px",
+                      }}
+                      onClick={OpenStripe}
+                    >
                       Starting Investment : $100/-
                     </Button>
                   </CardActions>
@@ -909,6 +1077,7 @@ function Crowdfunding() {
               answer:
                 "Yes, \n Gumroad's crowdfunding program allows you to raise funds for your creative projects.",
             },
+
             {
               question:
                 "What are the benefits of using Gumroad's crowdfunding program?",
