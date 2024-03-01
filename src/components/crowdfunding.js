@@ -261,11 +261,7 @@ function Crowdfunding() {
                   px: { xs: 0, lg: 6 },
                 }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#91A9ED",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={bitcoin2}
@@ -284,8 +280,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -297,6 +291,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -330,11 +326,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#22A194",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={MonkeyNFT}
@@ -352,8 +344,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -365,6 +355,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -398,11 +390,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#91A9ED",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={brainimg}
@@ -420,8 +408,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -433,6 +419,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       {" "}
                       Starting Investment : $100/-
@@ -467,11 +455,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#E2442F",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={monkeynft2}
@@ -489,8 +473,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -502,6 +484,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -541,11 +525,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#FEC901",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={mshair1}
@@ -563,8 +543,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -576,6 +554,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -609,11 +589,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#E2442F",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={mshair2}
@@ -631,8 +607,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -644,6 +618,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -677,11 +653,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#F1F232",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={vitrivianMan}
@@ -699,8 +671,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -712,6 +682,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -745,11 +717,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#22A194",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={ancientHero1}
@@ -767,8 +735,6 @@ function Crowdfunding() {
                   </CardContent>
                   <CardActions>
                     <Button
-                      size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -780,6 +746,8 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      size="small"
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -819,11 +787,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#F1F232",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={bitcoin1}
@@ -842,7 +806,6 @@ function Crowdfunding() {
                   <CardActions>
                     <Button
                       size="small"
-                      onClick={OpenStripe}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -854,6 +817,7 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
+                      onClick={OpenStripe}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -887,11 +851,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#E2442F",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={maxpack3}
@@ -956,11 +916,7 @@ function Crowdfunding() {
                   xs={12}
                   sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
                 >
-                  <Card
-                    style={{
-                      backgroundColor: "#FEC901",
-                    }}
-                  >
+                  <Card>
                     <CardMedia
                       sx={{ height: 300 }}
                       image={eagleimg}
@@ -1026,11 +982,7 @@ function Crowdfunding() {
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
               >
-                <Card
-                  style={{
-                    backgroundColor: "#91A9ED",
-                  }}
-                >
+                <Card>
                   <CardMedia
                     sx={{ height: 300 }}
                     image={pixelcoin1}
