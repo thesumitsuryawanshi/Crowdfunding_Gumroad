@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import { Box, Typography, Button } from "@mui/material";
@@ -15,7 +13,6 @@ import DefaultFooter from "./footer";
 import { AppBar, Toolbar } from "@mui/material";
 import DefaultNavBar from "./NavBar";
 import maxpack3 from "../assets/MyImages/Crowdfunding Images/maxpack3.png";
-
 import mshair1 from "../assets/MyImages/Crowdfunding Images/hair1.png";
 import mshair2 from "../assets/MyImages/Crowdfunding Images/hair2.png";
 import ancientHero1 from "../assets/MyImages/Crowdfunding Images/ancientHero1.png";
@@ -45,6 +42,60 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
 function Crowdfunding() {
+  const Openbitcoin2innewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/Bitcoin1");
+  };
+  const OpenMonkeyNFTinnewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/MonkeyNFT");
+  };
+  const OpenMonkeyNFT2innewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/MonkeyNFT2");
+  };
+  const OpenBrainCardinnewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/BrainCard");
+  };
+  //######################################################################################
+  const OpenMshair1innewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/Mshair1");
+  };
+  const OpenMshair2innewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/Mshair2");
+  };
+  const OpenVitrivianManinnewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/VitrivianMan");
+  };
+  const OpenAlexanderinnewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/Alexander");
+  };
+  //######################################################################################
+
+  //######################################################################################
+  const OpenBitcoin2innewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/Bitcoin2");
+  };
+  const OpenMaxPackinnewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/MaxPack");
+  };
+  const OpenEagleImginnewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/EagleImg");
+  };
+  const OpenNFTCoin3innewtab = () => {
+    // Open Gumroad website in a new tab when the button is clicked
+    window.open("http://localhost:3000/NFTCoin3");
+  };
+  //######################################################################################
+
   const [open, setOpen] = React.useState(false);
   const [selectedItem, setSelectedItem] = React.useState(null);
 
@@ -215,7 +266,6 @@ function Crowdfunding() {
           <img src={Coin1}></img>
         </Grid>
       </Grid>
-
       {/* //#################################################################################################################### */}
       <Grid
         display="flex"
@@ -292,7 +342,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={Openbitcoin2innewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -356,7 +406,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenMonkeyNFTinnewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -420,7 +470,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenBrainCardinnewtab}
                     >
                       {" "}
                       Starting Investment : $100/-
@@ -485,7 +535,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenMonkeyNFT2innewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -555,7 +605,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenMshair1innewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -619,7 +669,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenMshair2innewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -683,7 +733,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenVitrivianManinnewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -747,7 +797,7 @@ function Crowdfunding() {
                         borderRadius: "4px",
                       }}
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenAlexanderinnewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -817,7 +867,7 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
-                      onClick={OpenStripe}
+                      onClick={OpenBitcoin2innewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -870,7 +920,7 @@ function Crowdfunding() {
                   <CardActions>
                     <Button
                       size="small"
-                      onClick={OpenStripe}
+                      onClick={OpenMaxPackinnewtab}
                       display={"flex"}
                       flexDirection={"row"}
                       justifyContent={"start"}
@@ -935,7 +985,7 @@ function Crowdfunding() {
                     <CardActions>
                       <Button
                         size="small"
-                        onClick={OpenStripe}
+                        onClick={OpenEagleImginnewtab}
                         display={"flex"}
                         flexDirection={"row"}
                         justifyContent={"start"}
@@ -1013,7 +1063,7 @@ function Crowdfunding() {
                         border: "1px solid black",
                         borderRadius: "4px",
                       }}
-                      onClick={OpenStripe}
+                      onClick={OpenNFTCoin3innewtab}
                     >
                       Starting Investment : $100/-
                     </Button>
@@ -1024,9 +1074,7 @@ function Crowdfunding() {
           </Box>
         </Box>
       </Grid>
-
       {/* //#################################################################################################################### */}
-
       <Box
         justifyContent="Start"
         fontFamily="sans-serif"
