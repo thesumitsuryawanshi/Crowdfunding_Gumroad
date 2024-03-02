@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+::selection {
+  background-color: #fc72e0;
+  /* Change to the desired background color */
+  /* Change to the desired text color */
+}
