@@ -95,9 +95,22 @@ function Bitcoin2() {
       </AppBar>
 
       <Container>
-        <Grid border="1px solid black" borderRadius={" 12px"} p={1} m={1}>
-          <Grid>
+        <Grid
+          border="1px solid black"
+          boxShadow="8px 8px #000"
+          borderRadius={" 12px"}
+          p={1}
+          m={1}
+        >
+          <Grid
+            boxShadow="5px 5px #000"
+            border="1px solid black"
+            borderRadius={" 12px"}
+          >
             <Grid
+              boxShadow="5px 5px #000"
+              border="1px solid black"
+              borderRadius={" 12px"}
               p={4}
               m={4}
               display="flex"
@@ -130,17 +143,24 @@ function Bitcoin2() {
                     color: "#000",
                     fontSize: 13, // Set the font size here
                     backgroundColor: "#fff",
+                    boxShadow: "5px 5px #f00",
                     border: "1px solid black",
                     borderRadius: "4px",
                   }}
                   size="small"
                   onClick={OpenStripe}
                 >
-                  Starting Investment : $100/-
+                  Starting Investment :$100/-
                 </Button>{" "}
               </Grid>
 
-              <Grid m={2} p={2}>
+              <Grid
+                m={2}
+                p={2}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
+              >
                 <Card>
                   <CardMedia
                     sx={{ height: 300 }}
@@ -163,7 +183,14 @@ function Bitcoin2() {
             </Grid>
           </Grid>
 
-          <Grid display={"flex"} flexDirection={"row"}>
+          <Grid
+            display={"flex"}
+            flexDirection={"row"}
+            backgroundColor="#fff"
+            boxShadow="5px 5px   #000"
+            border="1px solid black"
+            borderRadius="4px"
+          >
             <Grid p={5} m={5}>
               <BarChart
                 width={500}

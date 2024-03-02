@@ -310,6 +310,9 @@ function Crowdfunding() {
                   mx: "auto",
                   px: { xs: 0, lg: 6 },
                 }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -375,6 +378,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -439,6 +445,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -504,6 +513,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -574,6 +586,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -638,6 +653,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -702,6 +720,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -766,6 +787,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -836,6 +860,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -900,6 +927,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
@@ -965,6 +995,9 @@ function Crowdfunding() {
                   item
                   xs={12}
                   sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                  boxShadow="5px 5px #000"
+                  border="1px solid black"
+                  borderRadius={" 12px"}
                 >
                   <Card>
                     <CardMedia
@@ -1031,6 +1064,9 @@ function Crowdfunding() {
                 item
                 xs={12}
                 sx={{ mx: "auto", px: { xs: 0, lg: 6 } }}
+                boxShadow="5px 5px #000"
+                border="1px solid black"
+                borderRadius={" 12px"}
               >
                 <Card>
                   <CardMedia
