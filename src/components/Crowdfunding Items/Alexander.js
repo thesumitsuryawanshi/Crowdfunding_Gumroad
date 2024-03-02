@@ -117,7 +117,8 @@ function Alexander() {
               sed sequi architecto.<br></br>
             </Typography>
           </Grid>
-          <Grid m={5} p={5}>
+
+          <Grid m={5} p={5} alignItems={"center"}>
             <Card>
               <CardMedia
                 sx={{ height: 300 }}
